@@ -1,0 +1,34 @@
+.md-header__title {
+  /* Hides site_name from header */
+  visibility: hidden;
+}
+
+/* :root {
+  --md-primary-fg-color:        #EE0F0F;
+  --md-primary-fg-color--light: #ECB7B7;
+  --md-primary-fg-color--dark:  #90030C;
+} */
+
+
+/* Here we can override coloured syntax */
+/* https://github.com/Frogli/OmnisStudioHighlighter */
+/* Probably best to build a Lexer for Omnis is Pygments... */
+/* :root > * {
+  
+  --md-code-hl-number-color: #FFF;
+  --md-code-hl-special-color: #e29c5a;
+  --md-code-hl-function-color: #fffc4f;
+  --md-code-hl-constant-color: #e29c5a;
+  --md-code-hl-keyword-color: #e29c5a;
+  --md-code-hl-string-color: #9bf2f7;
+  --md-code-hl-name-color: #e29c5a;
+  --md-code-hl-operator-color: #e29c5a;
+  --md-code-hl-punctuation-color: #e29c5a;
+  --md-code-hl-comment-color: #919ba5;
+  --md-code-hl-generic-color: #4fa7c6;
+  --md-code-hl-variable-color: #4fa7c6;
+
+  --md-code-fg-color: inherited;
+  --md-code-bg-color: #212121;
+  --md-code-hl-color: inherited;
+} */

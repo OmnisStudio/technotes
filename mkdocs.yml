@@ -1,0 +1,67 @@
+site_name: Omnis Technical Notes
+site_url: https://technotes.omnis.net/
+copyright: COPYRIGHT &copy; 2023 OMNIS SOFTWARE LTD. | ALL RIGHTS RESERVED
+use_directory_urls: false
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+plugins:
+  - redirects:
+      redirect_maps:
+          'index.md': 'Technical Notes/index.md'
+  - offline
+  - search:
+      lang: en
+extra_css:
+  - stylesheets/extra.css
+theme:
+  logo: assets/omnis-logo.webp
+  name: material
+  favicon: assets/favicon.png
+  hide_site_name: true
+  font:
+    text: Roboto
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+      primary: white
+      accent: orange
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+      primary: black
+      accent: orange
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - header.autohide
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - navigation.indexes
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/OmnisStudio
+    - icon: fontawesome/brands/github
+      link: https://github.com/OmnisStudio
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/omnissoftware
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/omnis-software-ltd
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/Omnisstudio
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCyuBROlrbgLSpHNHtJZEAYg
