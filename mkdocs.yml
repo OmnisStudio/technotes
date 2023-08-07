@@ -50,6 +50,7 @@ theme:
     - navigation.tabs
     - navigation.top
     - navigation.indexes
+    - navigation.footer
 extra:
   generator: false
   social:
