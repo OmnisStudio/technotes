@@ -3,13 +3,13 @@ site_url: https://technotes.omnis.net/
 copyright: COPYRIGHT &copy; 2023 OMNIS SOFTWARE LTD. | ALL RIGHTS RESERVED
 use_directory_urls: false
 markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
+  # - pymdownx.highlight:
+  #     anchor_linenums: true
+  #     line_spans: __span
+  #     pygments_lang_class: true
+  # - pymdownx.inlinehilite
+  # - pymdownx.snippets
+  # - pymdownx.superfences
   - attr_list
 plugins:
   - redirects:
@@ -21,9 +21,14 @@ plugins:
   - glightbox
 extra_css:
   - stylesheets/extra.css
+  - highlightjs/highlight-theme.css
+extra_javascript:
+  - highlightjs/highlight.pack.js
+  - highlightjs/init.js
 theme:
   logo: assets/omnis-logo.webp
   name: material
+  highlightjs: true
   favicon: assets/favicon.png
   hide_site_name: true
   font:
