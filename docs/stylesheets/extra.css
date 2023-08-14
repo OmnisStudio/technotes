@@ -23,6 +23,10 @@ p.description {
 	background: #0099ff22;
 }
 
+
+h3 {
+	border-bottom: 1px solid darkgrey;
+}
 /* :root {
   --md-primary-fg-color:        #EE0F0F;
   --md-primary-fg-color--light: #ECB7B7;
