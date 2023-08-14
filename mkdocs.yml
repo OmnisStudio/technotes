@@ -10,6 +10,7 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - attr_list
 plugins:
   - redirects:
       redirect_maps:
@@ -17,6 +18,7 @@ plugins:
   - offline
   - search:
       lang: en
+  - glightbox
 extra_css:
   - stylesheets/extra.css
 theme:

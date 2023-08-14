@@ -4,6 +4,8 @@ Omnis Technical Notes cover a wealth of Omnis Studio programming information. Al
 
 ## Latest
 
+<!-- [Debugging The JS Client: Exceptions](Debugging%20The%20JS%20Client/Exceptions.md) -->
+
 [Extending Omnis: Using the oProcess Worker](Extending Omnis/Using the oProcess Worker/index.md)
 
 [Extending Omnis: Using the Python Worker](Extending Omnis/Using the Python Worker/index.md)

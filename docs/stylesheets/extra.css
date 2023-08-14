@@ -3,6 +3,26 @@
   visibility: hidden;
 }
 
+.image-medium {
+	max-width: 400px !important;
+}
+
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.description {
+	color: cornflowerblue;
+	font-size: .8em;
+}
+
+p.description {
+	padding: 8px 30px;
+	background: #0099ff22;
+}
+
 /* :root {
   --md-primary-fg-color:        #EE0F0F;
   --md-primary-fg-color--light: #ECB7B7;
