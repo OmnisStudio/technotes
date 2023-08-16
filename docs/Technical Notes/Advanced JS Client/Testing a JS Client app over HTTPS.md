@@ -1,6 +1,6 @@
-Omnis Studio has a built in server for testing your remote forms and apps. However, it is only able to serve this locally, and over http. 
+Omnis Studio has a built in server for testing your remote forms and apps. However, this is only served on the local network over http. 
 
-If your remote form contains a feature that requires a [secure context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts), such as accessing the users camera device in the camera control, then this will fail to work when testing on a device other than the localhost. For example, if you use a mobile device on the same network to preview the app, *pError* in the relative event will be populated with an error code and description similar to:
+If your remote form contains a feature that requires a [secure context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts), such as accessing the user's camera device in the camera control, then this will fail to work when testing on a device other than the localhost. For example, if you use a mobile device on the same network to preview the app, *pError* in the relative event will be populated with an error code and description similar to:
 
 ![Not Secure Context Error](/assets/testing_https_images/pErrorCamera.png){: .image-medium .centered}
 
