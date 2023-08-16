@@ -27,7 +27,7 @@ ngrok should now be running in your terminal like in the image below:
 
 The **Forwarding** line shows you the live address which is now pointing at your localhost:port
 
-Copy this address and append the path to your html file, like `/jschtml/jsCamera.htm`, and share where you need to.
+Copy this address and append the path to your html file, like `/jschtml/jsCamera.htm`, and share where you need to. You'll now be able to properly test features that require **secure context** on other devices and share your work with others.
 
 Remember: The address is only temporary and will change next time you run ngrok.
 {: .description}
