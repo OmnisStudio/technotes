@@ -10,15 +10,14 @@ If you have an interesting topic to cover under a technical note, feel free to s
 
 ## Getting started
 
-The technical notes are rendered by mkdocs. In order to get started, you will need Python 3.
+The technical notes are rendered by mkdocs. In order to get started, you will need Python 3.7.
 
-Below are the required packages:
+We target Python 3.7, therefore make sure new packages you add are compatible with Python 3.7!
+
+In order to install the required packages, please use the requirements.txt from the root of this repo:
 
 ```
-pip3 install mkdocs
-pip3 install mkdocs-material
-pip3 install mkdocs-redirects
-pip3 install mkdocs-glightbox
+python3 -m pip install -r requirements.txt
 ```
 
 ## Running in dev
