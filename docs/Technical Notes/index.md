@@ -4,6 +4,10 @@ Omnis Technical Notes cover a wealth of Omnis Studio programming information. Al
 
 ## Latest
 
+[Deployment: Using Docker with Omnis Headless Server](Deployment/Docker/index.md)
+
+[Deployment: Linux .run installer](Deployment/Linux installer/index.md)
+
 <!-- [Debugging The JS Client: Exceptions](Debugging%20The%20JS%20Client/Exceptions.md) -->
 
 [Advanced JS Client: Testing a JS Client app over HTTPS](Advanced JS Client/Testing a JS Client app over HTTPS.md)
