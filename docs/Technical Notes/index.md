@@ -4,6 +4,8 @@ Omnis Technical Notes cover a wealth of Omnis Studio programming information. Al
 
 ## Latest
 
+[Deployment: macOS notarization](Deployment/macOS notarization/index.md)
+
 [Deployment: Using Docker with Omnis Headless Server](Deployment/Docker/index.md)
 
 [Deployment: Linux .run installer](Deployment/Linux installer/index.md)
