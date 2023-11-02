@@ -50,6 +50,6 @@ Note: iSep is a variable that has been assigned in the definition of the variabl
 
 So in English it would be a comma, while in other languages it might be a semicolon.
 
-See the example [library](/assets/swaplistdata/swapdata.zip) accompanying this tech note (compatible with Omnis Studio 11 revision 35659 or above), which has an object class containing the `$getSwappedList` method, and a window containing a data grid to display the data.
+See the example [library](/assets/swaplistdata/swapdata.zip){:download} accompanying this tech note (compatible with Omnis Studio 11 revision 35659 or above), which has an object class containing the `$getSwappedList` method, and a window containing a data grid to display the data.
 
 Author: Andreas Pfeiffer, Senior Consultant, Omnis Germany.

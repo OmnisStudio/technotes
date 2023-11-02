@@ -27,6 +27,6 @@ Quit method lvToolTip
 
 The method uses the `style()` function to implement certain formatting properties such as adding an icon, and changing the font style and colors of the text.
 
-There is a sample [library](/assets/formatted_tooltips/tooltip.zip) which demonstrates this technique (compatible with Omnis Studio 11 revision 35659 or above).
+There is a sample [library](/assets/formatted_tooltips/tooltip.zip){:download} which demonstrates this technique (compatible with Omnis Studio 11 revision 35659 or above).
 
 Thanks to Christian Müller for providing this tech note.
