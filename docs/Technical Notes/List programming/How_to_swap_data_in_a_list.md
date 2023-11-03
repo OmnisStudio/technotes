@@ -32,8 +32,7 @@ While lColRef
     Do pList.$cols.$next(lColRef) Returns lColRef
     If lColRef
         Do lString.$assign(#NULL) ## make sure lString is cleared as it will be used in the following $sendall loop to concatinate a comma separated list for the $add command 
-        Do pList.$sendall(lString.$assign(con(lString,iSep,kSq,pList.[pList.$line].[lColRef.
-$name],kSq)))
+        Do pList.$sendall(lString.$assign(con(lString,iSep,kSq,pList.[pList.$line].[lColRef.$name],kSq)))
         # calculate a row variable to add a line using the name of the column followed by the comma separated string calculated in the $sendall above
         Calculate lString as con('row(',kSq,lColRef.$name,kSq,lString,')') 
         # transfer the string into a row variable
