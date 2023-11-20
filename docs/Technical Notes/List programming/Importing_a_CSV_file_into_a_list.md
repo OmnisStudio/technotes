@@ -51,7 +51,8 @@ See the [sample library](/assets/importcsv/import_csv.zip){:download="import_csv
 There are two lines in the $construct method of the object class that sets the import encoding to unicode and the user import separator to semicolon:
 
 ```omnis
-Do $prefs.$importencoding.$assign(kUniTypeUTF8) Do $clib.$prefs.$userexportdelimiter.$assign(';')
+Do $prefs.$importencoding.$assign(kUniTypeUTF8)
+Do $clib.$prefs.$userexportdelimiter.$assign(';')
 ```
 
 Note: some CSV files might have diﬀerent line breaks (LF or CR or both). If the line breaks are LF only there might be a problem to import those files; to fix this, you can add a new item to the config.json file. To do this, select the **Edit configuration** option from the Options button in the bottom-left corner of the Omnis Studio Browser underneath the tree. Then go to the "default" section and press the plus (+) button in the header which allows you to add a new variable. Enter the following:
