@@ -4,11 +4,9 @@ Omnis has some powerful commands that allow you to import structural data, such 
 
 When importing data into an Omnis list, you must define the columns (column name and type) in the list before using the Import Data command (or doing anything with list data for that matter). In this case, you need to look at the first line of your data file to see how many columns are required in the list and what the column names should be.
 
-![Import CSV window](/assets/importcsv/importcsv.png){: .image-medium .centered}
-
 The following is a method that you can use to import a tab delimited CSV file into an Omnis list, while maintaining the column headings:
 
-#### The \$importCSV method
+#### The $importCSV method
 
 ```omnis
 # create parameter: pPath (Character)
@@ -46,7 +44,11 @@ Finally you need to close the import file:
 Close import file
 ```
 
-See the [sample library](/assets/importcsv/import_csv.zip){:download="import_csv.zip"} that demonstrates how you can use this method with diﬀerent column separators. There are also two lines in the \$construct method of the object class that sets the import encoding to unicode and the user import separator to semicolon:
+See the [sample library](/assets/importcsv/import_csv.zip){:download="import_csv.zip"} that demonstrates how you can use this method with diﬀerent column separators. 
+
+![Import CSV window](/assets/importcsv/importcsv.png){: .image-medium .centered}
+
+There are two lines in the $construct method of the object class that sets the import encoding to unicode and the user import separator to semicolon:
 
 ```omnis
 Do $prefs.$importencoding.$assign(kUniTypeUTF8) Do $clib.$prefs.$userexportdelimiter.$assign(';')
