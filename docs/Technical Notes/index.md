@@ -4,6 +4,8 @@ Omnis Technical Notes cover a wealth of Omnis Studio programming information. Al
 
 ## Latest
 
+[List programming: Importing a CSV file into a list](List programming/Importing_a_CSV_file_into_a_list.md)
+
 [List programming: How to swap data in a list](List programming/How_to_swap_data_in_a_list.md)
 
 [Window components: Enhancing your Tool Tips](Window components/Enhancing_your_Tool_Tips.md)
