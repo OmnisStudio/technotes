@@ -19,15 +19,16 @@ The parameter `pPath` contains the path to the CSV file to be imported. The next
 So now before you can import all of the data, you need to use a command to import the first line which you can assume has the names of the column headings:
 
 ```omnis
-Import field from file into lHeaderString ## import header End import
+Import field from file into lHeaderString ## import header
+End import
 ```
 
 Note that you need to include the command *End import* because you will use another command to import the rest of the data into the list. Before you can do this, you need to define the list columns using the column names that are now in lHeaderString. However, they are currently delimited by a tab. That is why you need to use a loop and the *strtok()* function to loop through the `lHeaderString`:
 
 ```omnis
 While len(lHeaderString)>0
-    Calculate lColumnName as strtok('lHeaderString',kTab) ## cut each column name out of the string divided by tab
-    Do lImportList.$cols.$add(lColumnName,kCharacter,kSimplechar,100000000) ## add the column to the list
+    Calculate lColumnName as strtok('lHeaderString',kTab)  ## cut each column name out of the string divided by tab
+    Do lImportList.$cols.$add(lColumnName,kCharacter,kSimplechar,100000000)  ## add the column to the list
 End While
 ```
 
@@ -35,7 +36,7 @@ Now that you have defined the list, you need to import the rest of the data. Aga
 
 ```omnis
 Prepare for import from file Delimited (tabs)
-Import data lImportList ## this will import only the data, not the header anymore End import
+Import data lImportList  ## this will import only the data, not the header anymore End import
 ```
 
 Finally you need to close the import file:
