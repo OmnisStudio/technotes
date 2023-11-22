@@ -179,6 +179,11 @@ function sign {
     local entitlements="$2"
     local -a params
 
+    if [ ! -e "$BUNDLE$path" ]; then
+        echo "$BUNDLE$path does not exist, skipping"
+        return
+    fi
+
     if ! __is_file "$path"; then
         params+=("--deep")
     fi
