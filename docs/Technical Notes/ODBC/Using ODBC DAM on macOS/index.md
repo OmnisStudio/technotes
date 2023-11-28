@@ -33,7 +33,7 @@ Open (or create) **/Library/ODBC/odbc.ini** and add your connection details, for
 [ODBC Data Sources]
 ntms2018 = ODBC Driver 18 for SQL Server
 
-[ntms2017]
+[ntms2018]
 Driver = /usr/local/lib/libmsodbcsql.18.dylib
 Description = SQL Server 18 on SERVER-PC
 UID = henry
