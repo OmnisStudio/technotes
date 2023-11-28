@@ -51,6 +51,6 @@ In order for Omnis Studio's ODBC DAM to look for the **libodbc.dylib**, we need 
 
 ```omnis
 Do sessionObj.$mode.$assign(kODBCModeUnix)
-Do sessionObj.$database.$assign('test')
+Do sessionObj.$defaultdatabase.$assign('test')
 Do sessionObj.$logon('ntms2018','henry','password','session1') Returns #F
 ```
