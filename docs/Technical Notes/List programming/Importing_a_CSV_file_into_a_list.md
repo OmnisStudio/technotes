@@ -36,7 +36,8 @@ Now that you have defined the list, you need to import the rest of the data. Aga
 
 ```omnis
 Prepare for import from file Delimited (tabs)
-Import data lImportList  ## this will import only the data, not the header anymore End import
+Import data lImportList  ## this will import only the data, not the header anymore
+End import
 ```
 
 Finally you need to close the import file:
