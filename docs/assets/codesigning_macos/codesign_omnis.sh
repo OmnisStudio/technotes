@@ -171,7 +171,7 @@ function __remove_attributes {
 function prepare_bundle {
     __remove_signature
     __remove_attributes
-#    chmod -R a+w "$BUNDLE/Contents/MacOS/xcomp/obrowser.u_xcomp/Contents/Frameworks/Chromium Embedded Framework.framework/Resources"
+#    chmod -R a+w "$BUNDLE/Contents/PlugIns/obrowser.u_xcomp/Contents/Frameworks/Chromium Embedded Framework.framework/Resources"
 }
 
 function sign {
@@ -182,10 +182,6 @@ function sign {
     if [ ! -e "$BUNDLE$path" ]; then
         echo "$BUNDLE$path does not exist, skipping"
         return
-    fi
-
-    if ! __is_file "$path"; then
-        params+=("--deep")
     fi
 
     params+=(-f -o runtime --timestamp -v)
@@ -218,15 +214,16 @@ __parse_arguments "$@"
 __validate_arguments
 
 prepare_bundle
-sign_folder_contents "/Contents/MacOS/xcomp/obrowser.u_xcomp/Contents/Frameworks/Chromium Embedded Framework.framework/Libraries" $ENTITLEMENTS
-sign "/Contents/Resources/crashpad/crashpad_handler" $EXTRA_ENTITLEMENTS
-sign "/Contents/Resources/nodejs/node" $EXTRA_ENTITLEMENTS
-sign "/Contents/MacOS/xcomp/obrowser.u_xcomp/Contents/Frameworks/obrowser Helper.app" $EXTRA_ENTITLEMENTS
-sign "/Contents/MacOS/xcomp/obrowser.u_xcomp/Contents/Frameworks/obrowser Helper (GPU).app" $EXTRA_ENTITLEMENTS
-sign "/Contents/MacOS/xcomp/obrowser.u_xcomp/Contents/Frameworks/obrowser Helper (Renderer).app" $EXTRA_ENTITLEMENTS
-wait
-
-sign "/Contents/MacOS/xcomp/obrowser.u_xcomp" $ENTITLEMENTS
+sign_folder_contents "/Contents/PlugIns/obrowser.u_xcomp/Contents/Frameworks/Chromium Embedded Framework.framework/Libraries" $ENTITLEMENTS
+sign "/Contents/PlugIns/obrowser.u_xcomp/Contents/Frameworks/Chromium Embedded Framework.framework/Chromium Embedded Framework" $ENTITLEMENTS
+sign_folder_contents "/Contents/PlugIns/obrowser.u_xcomp/Contents/Frameworks" $EXTRA_ENTITLEMENTS
+sign_folder_contents "/Contents/PlugIns/graphs2.u_xcomp/Contents/Frameworks" $ENTITLEMENTS
+sign_folder_contents "/Contents/PlugIns/dampgsql.u_xcomp/Contents/Frameworks" $ENTITLEMENTS
+sign_folder_contents "/Contents/PlugIns" $ENTITLEMENTS
+sign_folder_contents "/Contents/Helpers" $ENTITLEMENTS
+sign_folder_contents "/Contents/Frameworks" $ENTITLEMENTS
+sign "/Contents/Helpers/crashpad_handler" $EXTRA_ENTITLEMENTS
+sign "/Contents/Helpers/node" $EXTRA_ENTITLEMENTS
 wait
 
 # Sign your components here
